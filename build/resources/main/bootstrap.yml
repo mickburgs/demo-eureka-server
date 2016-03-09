@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: demo-eureka-server
+ 
+server:
+  port: 8002
+ 
+eureka:
+  preferSameZone: true
+  responseCacheAutoExpirationInSeconds: 5
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 10
+    hostname: localhost
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  server:
+    enableSelfPreservation: true
+security:
+  basic:
+    enabled: false
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
