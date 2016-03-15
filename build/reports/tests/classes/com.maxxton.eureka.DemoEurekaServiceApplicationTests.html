@@ -87,39 +87,36 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:41:56.767 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.773 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:41:56.781 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:41:56.791 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
-15:41:56.815 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@4b1f3eed declaringClass = 'com.maxxton.eureka.DemoEurekaServiceApplicationTests', classes = '{class com.maxxton.eureka.DemoEurekaServiceApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-15:41:56.824 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: class path resource [com/maxxton/eureka/DemoEurekaServiceApplicationTests-context.xml] does not exist
-15:41:56.824 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: class path resource [com/maxxton/eureka/DemoEurekaServiceApplicationTestsContext.groovy] does not exist
-15:41:56.824 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:41:56.827 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.831 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: using defaults.
-15:41:56.840 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-15:41:56.847 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-15:41:56.854 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-15:41:56.857 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b6606d3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2aca8e4d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@114cb92c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2a455ae7]
-15:41:56.861 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.862 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.863 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.863 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.868 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@136ac13 testClass = DemoEurekaServiceApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@74ac0b70 testClass = DemoEurekaServiceApplicationTests, locations = '{}', classes = '{class com.maxxton.eureka.DemoEurekaServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-15:41:56.869 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.870 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
-15:41:56.872 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@136ac13 testClass = DemoEurekaServiceApplicationTests, testInstance = com.maxxton.eureka.DemoEurekaServiceApplicationTests@231906c9, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@74ac0b70 testClass = DemoEurekaServiceApplicationTests, locations = '{}', classes = '{class com.maxxton.eureka.DemoEurekaServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
-15:41:56.959 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-15:41:56.961 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-15:41:56.962 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-15:41:56.964 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
-2016-03-08 15:41:59.323  INFO 12112 --- [    Test worker] o.s.boot.SpringApplication               : Starting application on Maxxton2016-1 with PID 12112 (C:\Users\burgs.m\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\1.3.3.RELEASE\641cc375499d444e4efbc1801902260daa79758d\spring-boot-1.3.3.RELEASE.jar started by burgs.m in C:\Users\burgs.m\Documents\microservice\demo-eureka-service)
-2016-03-08 15:41:59.325  INFO 12112 --- [    Test worker] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
-2016-03-08 15:41:59.356  INFO 12112 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4dd744cb: startup date [Tue Mar 08 15:41:59 CET 2016]; root of context hierarchy
-2016-03-08 15:41:59.541  INFO 12112 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-03-08 15:41:59.560  INFO 12112 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$737e2e4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-03-08 15:41:59.775  INFO 12112 --- [    Test worker] o.s.boot.SpringApplication               : Started application in 2.698 seconds (JVM running for 3.799)
-2016-03-08 15:42:01.415  INFO 12112 --- [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+<pre>15:16:35.345 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.353 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:16:35.363 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:16:35.373 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+15:16:35.417 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@2543bda8 declaringClass = 'com.maxxton.eureka.DemoEurekaServiceApplicationTests', classes = '{class com.maxxton.eureka.DemoEurekaServiceApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+15:16:35.427 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: class path resource [com/maxxton/eureka/DemoEurekaServiceApplicationTests-context.xml] does not exist
+15:16:35.428 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: class path resource [com/maxxton/eureka/DemoEurekaServiceApplicationTestsContext.groovy] does not exist
+15:16:35.428 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:16:35.432 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.436 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]: using defaults.
+15:16:35.450 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15:16:35.472 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+15:16:35.472 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+15:16:35.475 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@420527a5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6979b336, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@62054e5d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3532d29b]
+15:16:35.480 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.481 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.482 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.482 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.485 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@376b1e87 testClass = DemoEurekaServiceApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@f2e5924 testClass = DemoEurekaServiceApplicationTests, locations = '{}', classes = '{class com.maxxton.eureka.DemoEurekaServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+15:16:35.486 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.486 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.maxxton.eureka.DemoEurekaServiceApplicationTests]
+15:16:35.498 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@376b1e87 testClass = DemoEurekaServiceApplicationTests, testInstance = com.maxxton.eureka.DemoEurekaServiceApplicationTests@7e7e1d8a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@f2e5924 testClass = DemoEurekaServiceApplicationTests, locations = '{}', classes = '{class com.maxxton.eureka.DemoEurekaServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+15:16:35.665 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:16:35.667 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:16:35.667 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:16:35.669 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+2016-03-15 15:16:38.419  INFO 11808 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4577dea4: startup date [Tue Mar 15 15:16:38 CET 2016]; root of context hierarchy
+2016-03-15 15:16:38.613  INFO 11808 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-15 15:16:38.639  INFO 11808 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$636a6e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-03-15 15:16:40.521  INFO 11808 --- [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -129,61 +126,62 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.3.RELEASE)
 
-2016-03-08 15:42:01.469  INFO 12112 --- [    Test worker] c.m.e.DemoEurekaServiceApplicationTests  : No active profile set, falling back to default profiles: default
-2016-03-08 15:42:01.485  INFO 12112 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@62a7c607: startup date [Tue Mar 08 15:42:01 CET 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4dd744cb
-2016-03-08 15:42:02.398  INFO 12112 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=869343e7-6a63-3cb2-83a0-1cd608960377
-2016-03-08 15:42:02.407  INFO 12112 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-03-08 15:42:02.427  INFO 12112 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$737e2e4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-03-08 15:42:02.438  INFO 12112 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$a65c2982] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-03-08 15:42:04.615  INFO 12112 --- [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2016-03-08 15:42:04.681  INFO 12112 --- [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2016-03-08 15:42:05.235  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2016-03-08 15:42:05.236  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2016-03-08 15:42:05.236  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2016-03-08 15:42:05.236  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2016-03-08 15:42:05.858  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2016-03-08 15:42:05.858  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2016-03-08 15:42:05.858  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2016-03-08 15:42:05.858  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2016-03-08 15:42:05.858  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2016-03-08 15:42:05.858  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2016-03-08 15:42:05.859  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2016-03-08 15:42:07.968 ERROR 12112 --- [    Test worker] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2016-03-15 15:16:40.588  INFO 11808 --- [    Test worker] c.m.e.DemoEurekaServiceApplicationTests  : No active profile set, falling back to default profiles: default
+2016-03-15 15:16:40.611  INFO 11808 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@74254f66: startup date [Tue Mar 15 15:16:40 CET 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4577dea4
+2016-03-15 15:16:41.718  INFO 11808 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e9b5a03a-f6ed-37ab-a013-97eb3b209aed
+2016-03-15 15:16:41.729  INFO 11808 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-15 15:16:41.752  INFO 11808 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$636a6e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-03-15 15:16:41.761  INFO 11808 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$96486952] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-03-15 15:16:44.032  INFO 11808 --- [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2016-03-15 15:16:44.138  INFO 11808 --- [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2016-03-15 15:16:44.722  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2016-03-15 15:16:44.725  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2016-03-15 15:16:44.726  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2016-03-15 15:16:44.726  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2016-03-15 15:16:44.962  INFO 11808 --- [    Test worker] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2016-03-15 15:16:45.358  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-03-15 15:16:45.358  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-03-15 15:16:45.359  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-03-15 15:16:45.359  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-03-15 15:16:45.359  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-03-15 15:16:45.359  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-03-15 15:16:45.359  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-03-15 15:16:47.516 ERROR 11808 --- [    Test worker] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.jar:1.19]
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.jar:1.19]
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.jar:1.19]
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.jar:1.19]
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.jar:1.19]
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.jar:1.19]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1009) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:923) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:441) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:304) [eureka-client-1.4.2.jar:1.4.2]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:165) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1013) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:927) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:441) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:304) [eureka-client-1.4.4.jar:1.4.4]
 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.&lt;init&gt;(CloudEurekaClient.java:51) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:190) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$34aa6f8b.CGLIB$eurekaClient$1(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$34aa6f8b$$FastClassBySpringCGLIB$$a634621d.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$2496af5b.CGLIB$eurekaClient$0(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$2496af5b$$FastClassBySpringCGLIB$$f7c6f553.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:355) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$34aa6f8b.eurekaClient(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$2496af5b.eurekaClient(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
@@ -195,19 +193,19 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:355) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:175) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:358) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:176) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:187) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at com.sun.proxy.$Proxy67.getApplications(Unknown Source) [na:na]
 	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration.peerAwareInstanceRegistry(EurekaServerConfiguration.java:144) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$b1c397c.CGLIB$peerAwareInstanceRegistry$8(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$b1c397c$$FastClassBySpringCGLIB$$e951c095.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$fb08794c.CGLIB$peerAwareInstanceRegistry$7(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$fb08794c$$FastClassBySpringCGLIB$$a9bac446.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:355) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$b1c397c.peerAwareInstanceRegistry(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$fb08794c.peerAwareInstanceRegistry(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
@@ -321,29 +319,29 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882) ~[httpclient-4.5.jar:4.5]
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.jar:4.5]
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.jar:4.5]
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.jar:1.19]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
 	... 151 common frames omitted
 
-2016-03-08 15:42:07.973  WARN 12112 --- [    Test worker] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
-2016-03-08 15:42:07.977 ERROR 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEMO-EUREKA-SERVER/localhost:demo-eureka-server:-1 - was unable to refresh its cache! status = Cannot execute request on any known server
+2016-03-15 15:16:47.519  WARN 11808 --- [    Test worker] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2016-03-15 15:16:47.522 ERROR 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEMO-EUREKA-SERVER/localhost:demo-eureka-server:-1 - was unable to refresh its cache! status = Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1009) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:923) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:441) [eureka-client-1.4.2.jar:1.4.2]
-	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:304) [eureka-client-1.4.2.jar:1.4.2]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1013) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:927) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:441) [eureka-client-1.4.4.jar:1.4.4]
+	at com.netflix.discovery.DiscoveryClient.&lt;init&gt;(DiscoveryClient.java:304) [eureka-client-1.4.4.jar:1.4.4]
 	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.&lt;init&gt;(CloudEurekaClient.java:51) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:190) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$34aa6f8b.CGLIB$eurekaClient$1(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$34aa6f8b$$FastClassBySpringCGLIB$$a634621d.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$2496af5b.CGLIB$eurekaClient$0(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$2496af5b$$FastClassBySpringCGLIB$$f7c6f553.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:355) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
-	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$34aa6f8b.eurekaClient(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration$$EnhancerBySpringCGLIB$$2496af5b.eurekaClient(&lt;generated&gt;) [spring-cloud-netflix-eureka-client-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
@@ -355,19 +353,19 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:355) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:175) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:358) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:176) [spring-cloud-context-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:187) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at com.sun.proxy.$Proxy67.getApplications(Unknown Source) [na:na]
 	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration.peerAwareInstanceRegistry(EurekaServerConfiguration.java:144) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$b1c397c.CGLIB$peerAwareInstanceRegistry$8(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$b1c397c$$FastClassBySpringCGLIB$$e951c095.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$fb08794c.CGLIB$peerAwareInstanceRegistry$7(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$fb08794c$$FastClassBySpringCGLIB$$a9bac446.invoke(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.5.RELEASE.jar:4.2.5.RELEASE]
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:355) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$b1c397c.peerAwareInstanceRegistry(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerConfiguration$$EnhancerBySpringCGLIB$$fb08794c.peerAwareInstanceRegistry(&lt;generated&gt;) [spring-cloud-netflix-eureka-server-1.1.0.BUILD-SNAPSHOT.jar:1.1.0.BUILD-SNAPSHOT]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
@@ -464,30 +462,30 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
 
-2016-03-08 15:42:07.981  WARN 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
-2016-03-08 15:42:07.984  INFO 12112 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
-2016-03-08 15:42:08.001  INFO 12112 --- [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2016-03-08 15:42:08.166  INFO 12112 --- [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2016-03-08 15:42:08.169  INFO 12112 --- [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
-2016-03-08 15:42:08.176  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2016-03-08 15:42:08.176  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2016-03-08 15:42:08.176  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2016-03-08 15:42:08.176  INFO 12112 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2016-03-08 15:42:08.278  INFO 12112 --- [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
-2016-03-08 15:42:08.285  INFO 12112 --- [    Test worker] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2016-03-08 15:42:08.286  INFO 12112 --- [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2016-03-08 15:42:09.106  INFO 12112 --- [    Test worker] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.annotation.AnnotationConfigApplicationContext@62a7c607: startup date [Tue Mar 08 15:42:01 CET 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4dd744cb] and template loader path [classpath:/templates/]
-2016-03-08 15:42:09.261  WARN 12112 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2016-03-08 15:42:09.262  INFO 12112 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2016-03-08 15:42:09.270  WARN 12112 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2016-03-08 15:42:09.270  INFO 12112 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2016-03-08 15:42:09.630  INFO 12112 --- [    Test worker] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2016-03-08 15:42:09.633  INFO 12112 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
-2016-03-08 15:42:09.635  INFO 12112 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
-2016-03-08 15:42:09.637  INFO 12112 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
-2016-03-08 15:42:09.656  INFO 12112 --- [    Test worker] c.m.e.DemoEurekaServiceApplicationTests  : Started DemoEurekaServiceApplicationTests in 12.69 seconds (JVM running for 13.679)
-2016-03-08 15:42:09.673  INFO 12112 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2016-03-08 15:42:09.673  INFO 12112 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2016-03-15 15:16:47.525  WARN 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2016-03-15 15:16:47.527  INFO 11808 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2016-03-15 15:16:47.530  INFO 11808 --- [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2016-03-15 15:16:47.723  INFO 11808 --- [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2016-03-15 15:16:47.724  INFO 11808 --- [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2016-03-15 15:16:47.730  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2016-03-15 15:16:47.730  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2016-03-15 15:16:47.730  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2016-03-15 15:16:47.731  INFO 11808 --- [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2016-03-15 15:16:47.863  INFO 11808 --- [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2016-03-15 15:16:47.872  INFO 11808 --- [    Test worker] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2016-03-15 15:16:47.874  INFO 11808 --- [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2016-03-15 15:16:49.008  INFO 11808 --- [    Test worker] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.annotation.AnnotationConfigApplicationContext@74254f66: startup date [Tue Mar 15 15:16:40 CET 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4577dea4] and template loader path [classpath:/templates/]
+2016-03-15 15:16:49.243  WARN 11808 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-03-15 15:16:49.243  INFO 11808 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-03-15 15:16:49.249  WARN 11808 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-03-15 15:16:49.249  INFO 11808 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-03-15 15:16:49.706  INFO 11808 --- [    Test worker] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-03-15 15:16:49.708  INFO 11808 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2016-03-15 15:16:49.711  INFO 11808 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2016-03-15 15:16:49.711  INFO 11808 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2016-03-15 15:16:49.740  INFO 11808 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2016-03-15 15:16:49.740  INFO 11808 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2016-03-15 15:16:49.740  INFO 11808 --- [    Test worker] c.m.e.DemoEurekaServiceApplicationTests  : Started DemoEurekaServiceApplicationTests in 14.067 seconds (JVM running for 15.328)
 </pre>
 </span>
 </div>
@@ -499,7 +497,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.9</a> at 8-mrt-2016 15:42:11</p>
+<a href="http://www.gradle.org">Gradle 2.9</a> at 15-mrt-2016 15:16:51</p>
 </div>
 </div>
 </body>
