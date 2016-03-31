@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot' 
+apply plugin: 'maven' 
 
 jar {
 	baseName = 'demo-eureka-service'
@@ -34,6 +35,22 @@ repositories {
 dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
+}
+
+uploadArchives {
+    repositories {
+       mavenDeployer {
+             repository(url: "http://192.168.252.157:8081/nexus/content/repositories/releases") {
+             	authentication(userName: "admin", password: "admin123")
+	     }
+	     snapshotRepository(url: "http://192.168.252.157:8081/nexus/content/repositories/snapshots") {
+               	authentication(userName: "admin", password: "admin123")
+             }
+             pom.version = "1.0-SNAPSHOT"
+             pom.artifactId = "eureka-server"
+             pom.groupId = "com.maxxton"
+       }
+    }
 }
 
 dependencyManagement {
